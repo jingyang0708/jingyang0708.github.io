@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>vue</title>
+      <link href="/2022/12/19/vue/"/>
+      <url>/2022/12/19/vue/</url>
+      
+        <content type="html"><![CDATA[<h1 id="vue冲冲冲！！！"><a href="#vue冲冲冲！！！" class="headerlink" title="vue冲冲冲！！！"></a>vue冲冲冲！！！</h1><h2 id="脚手架文件结构"><a href="#脚手架文件结构" class="headerlink" title="脚手架文件结构"></a>脚手架文件结构</h2><pre><code>├── node_modules ├── public│   ├── favicon.ico: 页签图标│   └── index.html: 主页面├── src│   ├── assets: 存放静态资源│   │   └── logo.png│   │── component: 存放组件│   │   └── HelloWorld.vue│   │── App.vue: 汇总所有组件│   │── main.js: 入口文件├── .gitignore: git版本管制忽略的配置├── babel.config.js: babel的配置文件├── package.json: 应用包配置文件 ├── README.md: 应用描述文件├── package-lock.json：包版本控制文件</code></pre><h2 id="关于不同版本的Vue"><a href="#关于不同版本的Vue" class="headerlink" title="关于不同版本的Vue"></a>关于不同版本的Vue</h2><blockquote><p>1、vue.js和vue.runtime.xxx.js的区别：<br>     （1）、vue.js时完整版的Vue，包含：核心模块和模板解析器<br>     （2）、vue.runtime.xxx.js时运行版Vue，只包含：核心功能，没有模板解析器</p><p>2、因为vue.runtime.xxx.js没有模板解析器，所以不能使用template配置项，需要使用render函数接收到的createElement函数去指定具体内容</p></blockquote><h2 id="vue-config-js配置文件"><a href="#vue-config-js配置文件" class="headerlink" title="vue.config.js配置文件"></a>vue.config.js配置文件</h2><blockquote><p>使用vue inspect &gt; output.js可以查看Vue脚手架的默认配置<br>使用vue.config.js可以对脚手架进行个性化定制，详情见：<a href="https://cli.vuejs.org/zh/config/">https://cli.vuejs.org/zh/config/</a>    </p></blockquote><h2 id="ref属性"><a href="#ref属性" class="headerlink" title="ref属性"></a>ref属性</h2><blockquote><p>1、被用来给元素或子组件注册引用信息<br>2、应用在html标签上获取的是真实的DOM元素，应用在子组件标签上获取的是组件实例对象 vc<br>3、使用方式</p><blockquote><ul><li>打标识:<br> <code>&lt;h1 v-text=&quot;msg&quot; ref=&quot;title&quot;&gt;xxx&lt;/h1&gt;</code><br>   <code>&lt;School ref=&quot;sch&quot; /&gt;</code></li><li>获取：<blockquote><ul><li>console.log(this.$refs.title);  真实的DOM元素 </li><li>console.log(this.$refs.sch);  School组件的实例对象 vc</li></ul></blockquote></li></ul></blockquote></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>node.js</title>
+      <link href="/2022/12/02/nodejs/"/>
+      <url>/2022/12/02/nodejs/</url>
+      
+        <content type="html"><![CDATA[<h2 id="jing的哈哈哈"><a href="#jing的哈哈哈" class="headerlink" title="jing的哈哈哈"></a>jing的哈哈哈</h2><h3 id="node"><a href="#node" class="headerlink" title="node"></a>node</h3><blockquote><h2 id="ref属性"><a href="#ref属性" class="headerlink" title="ref属性"></a>ref属性</h2><p>1、被用来给元素或子组件注册引用信息<br>2、应用在html标签上获取的是真实的DOM元素，应用在子组件标签上获取的是组件实例对象 vc<br>3、使用方式</p><blockquote><ul><li>打标识:<br> <code>&lt;h1 v-text=&quot;msg&quot; ref=&quot;title&quot;&gt;xxx&lt;/h1&gt;</code><br>   <code>&lt;School ref=&quot;sch&quot; /&gt;</code></li><li>获取：<blockquote><ul><li>console.log(this.$refs.title);  真实的DOM元素 </li><li>console.log(this.$refs.sch);  School组件的实例对象 vc</li></ul></blockquote></li></ul></blockquote></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>jing的第一篇文章</title>
       <link href="/2022/11/30/22-11-30-jing%E7%9A%84%E7%AC%AC%E4%B8%80%E7%89%87%E6%96%87%E7%AB%A0/"/>
       <url>/2022/11/30/22-11-30-jing%E7%9A%84%E7%AC%AC%E4%B8%80%E7%89%87%E6%96%87%E7%AB%A0/</url>
