@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>尚品汇</title>
+      <link href="/2023/02/27/project/"/>
+      <url>/2023/02/27/project/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Vue前台项目"><a href="#Vue前台项目" class="headerlink" title="Vue前台项目"></a>Vue前台项目</h1><p>技术架构：vue+webpack+vuex+vue-rotuer+axios+less</p><h1 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h1><p>1、跨域<br>2、过渡动画<br>3、自定义事件</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>面试宝典</title>
+      <link href="/2023/02/27/interview/"/>
+      <url>/2023/02/27/interview/</url>
+      
+        <content type="html"><![CDATA[<h3 id="6种组件间通信方式"><a href="#6种组件间通信方式" class="headerlink" title="6种组件间通信方式"></a>6种组件间通信方式</h3><h4 id="props"><a href="#props" class="headerlink" title="props"></a>props</h4><p>使用场景：父子组件通信<br>注意事项：如果父组件给子组件传递数据（函数）：本质就是子组件给父组件传递数据<br>如果父组件给子组件传递的数据（非函数）：本质就是父组件给子组件提供数据</p><p>props书写方式：3种<br>数组[]<br>对象{type:Array}<br>对象 {type:Array,default:[]}</p><p>提示：路由的props<br>书写方式：布尔值、对象、函数</p><h4 id="自定义事件"><a href="#自定义事件" class="headerlink" title="自定义事件"></a>自定义事件</h4><p>使用场景：子组件给父组件传递数据<br>$on  $emit</p><h4 id="全局事件总线"><a href="#全局事件总线" class="headerlink" title="全局事件总线"></a>全局事件总线</h4><p>任意组件间通信<br>$bus<br>在main.js中添加 Vue.prototype.$bus&#x3D;this</p><h4 id="pubsub-js"><a href="#pubsub-js" class="headerlink" title="pubsub-js"></a>pubsub-js</h4><p>任意组件间通信<br>在react框架中使用的比较高（发布与订阅）</p><h4 id="vuex"><a href="#vuex" class="headerlink" title="vuex"></a>vuex</h4><p>任意组件间通信</p><h4 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h4><p>使用场景：父子组件通信（通信的一般是结构）<br>默认插槽<br>具名插槽<br>作用域插槽</p><h3 id="作用域和执行上下文的区别？"><a href="#作用域和执行上下文的区别？" class="headerlink" title="作用域和执行上下文的区别？"></a>作用域和执行上下文的区别？</h3><p>1、函数的执行上下文是在函数调用的时候生成的，而其作用域是在创建的时候就已经创建好了<br>2、作用域包含了若干个函数执行上下文，也有可能是零个（因为函数还没有执行）</p><h3 id="this的指向问题"><a href="#this的指向问题" class="headerlink" title="this的指向问题"></a>this的指向问题</h3><p>this的指向只有在调用时才能确定，因为this是执行上下文的一部分<br>1、全局作用域中的函数：this的指向是window<br>2、对象内部的函数：this的指向是其对象本身<br>3、构造函数：this的指向是他的实例对象<br>4、由apply、call、bind改造的函数：this的指向是他的第一个参数<br>5、箭头函数：箭头函数没有自己的this,他的this是其上下文中的this</p><h3 id="如何理解同步和异步"><a href="#如何理解同步和异步" class="headerlink" title="如何理解同步和异步"></a>如何理解同步和异步</h3><p>同步：同步就是按照代码的顺序，从上往下依次执行<br>异步：可以理解为是一种并行行为，意思就是可以不必等到上一段代码执行完毕，就可以执行其他的代码。<br>js之所以需要异步是因为js是单线程的，常用的异步场景有：定时器，ajax请求、事件绑定等</p><h3 id="实现异步的方式有哪些"><a href="#实现异步的方式有哪些" class="headerlink" title="实现异步的方式有哪些"></a>实现异步的方式有哪些</h3><p>1、回调函数<br>2、事件监听<br>3、发布订阅模式<br>4、Promise<br>5、async&#x2F;await<br>6、利用生成器实现</p><h3 id="怎样理解Promise对象"><a href="#怎样理解Promise对象" class="headerlink" title="怎样理解Promise对象"></a>怎样理解Promise对象</h3><p>Promise对象有以下两个特点：<br>1、对象的状态不受外界的影响。Promise对象一共有三种状态，pending、fulfilled、rejected。状态值只会被异步的结果决定，其他操作无法改变。<br>2、状态一旦改变，就不会再变，且任何时候都可以得到这个结果。状态值会由pending–&gt;fulfilled或pending–&gt;rejected，这时既是resloved<br>Promise有以下三个缺点：<br>1、Promise一旦执行就无法取消<br>2、不可设置回调函数，其内部的错误无法捕获<br>3、当Promise处于pending的时候，无法得知具体发展道路那一步<br>Promise中常用的方法（记得敲代码）<br>1、.then()  .catch() </p><h3 id="事件委派"><a href="#事件委派" class="headerlink" title="事件委派"></a>事件委派</h3><p>事件委派也叫做事件代理，就是不在子元素上绑定事件监听器，而是把子元素的的事件都绑定到父元素的身上，利用事件冒泡的原理进行</p><h3 id="解释一下变量提升"><a href="#解释一下变量提升" class="headerlink" title="解释一下变量提升"></a>解释一下变量提升</h3><p>变量提升是js的默认行为，这意味着将所有的变量提升到当前作用域的顶部，并且可以在声明之前使用变量。初始化不会被提升，提升仅作用于白能量的声明。</p><h3 id="cooKies机制和session机制的区别"><a href="#cooKies机制和session机制的区别" class="headerlink" title="cooKies机制和session机制的区别"></a>cooKies机制和session机制的区别</h3><p>1、cookies数据保存在客户端，session数据保存在服务端<br>2、cookies可以减轻服务器的压力，但是不安全，容易进行cookies欺骗<br>3、session安全一点，但是占用服务器资源</p><h3 id="get和post的区别"><a href="#get和post的区别" class="headerlink" title="get和post的区别"></a>get和post的区别</h3><p>简单来说，get产生一个TCP数据包，post生成两个TCP数据包<br>1、post可以传参，get不可以<br>2、post带的字符串，不限制长度</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vue冲冲冲！</title>
       <link href="/2022/12/19/vue/"/>
       <url>/2022/12/19/vue/</url>
